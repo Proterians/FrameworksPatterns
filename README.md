@@ -5,7 +5,7 @@ Code Design Patterns in Test Automation
 PREREQUISITES: project with Selenium WebDriver HW-s (parts 1-3) done.
 MANDATORY: Implement the following design patterns in your solution from previous module:
 a. Singleton
-b. Factory Method
+b. Builder
 c. Decorator
 You can use any area of you code to apply the pattern (any code layer – test, service or page object and their combinations). 
 Implement the pattern in form, which is more convenient for you – there is no strict requirements or restrictions. 
