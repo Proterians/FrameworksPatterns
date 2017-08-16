@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test for informal letter(failed)">
+    <parameter name="letterParam" value="informal"/>
+    <classes>
+      <class name="tests.GmailTest">
+        <methods>
+          <include name="verifyInputFields"/>
+          <include name="setWaiters"/>
+          <include name="closeBrowser"/>
+          <include name="setLetter"/>
+          <include name="loginValidUser"/>
+          <include name="startBrowser"/>
+          <include name="startBrowser"/>
+          <include name="writeLetterAndSave"/>
+          <include name="verifySentMails"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- tests.GmailTest -->
+    </classes>
+  </test> <!-- Test for informal letter(failed) -->
+</suite> <!-- Failed suite [Suite] -->

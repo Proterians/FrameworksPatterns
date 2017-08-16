@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [MailTest]" parallel="tests">
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="remoteurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="tests.GmailTest">
+        <methods>
+          <include name="verifyInputFields"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="loginValidUser"/>
+          <include name="verifyDrafts"/>
+          <include name="startBrowser"/>
+          <include name="startBrowser"/>
+          <include name="writeLetterAndSave"/>
+          <include name="verifySentMails"/>
+        </methods>
+      </class> <!-- tests.GmailTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="remoteurl" value="http://localhost:4444/wd/hub"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="tests.GmailTest">
+        <methods>
+          <include name="verifyInputFields"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="loginValidUser"/>
+          <include name="verifyDrafts"/>
+          <include name="startBrowser"/>
+          <include name="startBrowser"/>
+          <include name="writeLetterAndSave"/>
+          <include name="verifySentMails"/>
+        </methods>
+      </class> <!-- tests.GmailTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [MailTest] -->
