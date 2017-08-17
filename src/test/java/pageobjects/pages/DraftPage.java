@@ -12,7 +12,9 @@ import pageobjects.BasePage;
  * Class described a draft mail page when you can see drafts
  * 
  * @author Ivan_Bulgakov
- *
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
 public class DraftPage extends BasePage {
 

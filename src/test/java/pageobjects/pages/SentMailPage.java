@@ -14,7 +14,9 @@ import pageobjects.BasePage;
  * Class described a sent mail page when you can see sent mails
  * 
  * @author Ivan_Bulgakov
- *
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
 public class SentMailPage extends BasePage {
 

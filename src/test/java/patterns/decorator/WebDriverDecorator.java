@@ -12,7 +12,9 @@ import org.testng.Reporter;
  * Implementation of pattern "Decorator" for Interface "WebDriver"
  * 
  * @author Ivan_Bulgakov
- *
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
 public class WebDriverDecorator implements WebDriver {
 

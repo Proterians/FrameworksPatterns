@@ -9,7 +9,9 @@ import pageobjects.BasePage;
  * Class described a main mail page when you login into the email box
  * 
  * @author Ivan_Bulgakov
- *
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
 
 public class AllMailPage extends BasePage {

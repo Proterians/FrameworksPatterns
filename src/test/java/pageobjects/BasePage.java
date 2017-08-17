@@ -19,7 +19,9 @@ import patterns.decorator.WebDriverDecorator;
  * described with using TestNG annotation and lazy initialization of PageFactory
  * 
  * @author Ivan_Bulgakov
- *
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
 public class BasePage {
 

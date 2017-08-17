@@ -11,7 +11,9 @@ import pageobjects.BasePage;
  * Class described a page when you must type password for login
  * 
  * @author Ivan_Bulgakov
- *
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
 public class PasswordPage extends BasePage {
 

@@ -1,17 +1,20 @@
 package pageobjects.pages;
 
-/** 
- * Class described a page when you must type your email as a login
- * 
- * @author Ivan_Bulgakov
- *
- */
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import businessobjects.User;
 import pageobjects.BasePage;
+
+/**
+ * Class described a page when you must type your email as a login
+ * 
+ * @author Ivan_Bulgakov
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
+ */
 
 public class LoginPage extends BasePage {
 

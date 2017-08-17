@@ -2,8 +2,12 @@ package patterns.builder;
 
 import java.util.Date;
 /**
+ * Class with implementation pattern "Builder"
+ * 
  * @author Ivan_Bulgakov
- *
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
 public class InformalLetterBuilder extends LetterBuilder {
 

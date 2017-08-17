@@ -5,8 +5,10 @@ package businessobjects;
  * <b>testSubject</b>, <b>testBody</b>
  * 
  * @author Ivan_Bulgakov
+ * @CreateDate July, 24, 2017
+ * @UpdateDate August, 17, 2017
+ * @UpdatedBy Ivan_Bulgakov
  */
-
 
 public class Letter {
 
