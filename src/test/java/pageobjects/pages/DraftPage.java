@@ -8,8 +8,20 @@ import org.openqa.selenium.support.FindBy;
 import businessobjects.Letter;
 import pageobjects.BasePage;
 
+/**
+ * Class described a draft mail page when you can see drafts
+ * 
+ * @author Ivan_Bulgakov
+ *
+ */
 public class DraftPage extends BasePage {
 
+	/**
+	 * Constructor with lazy initialization of @see PageFactory
+	 * 
+	 * @param driver
+	 *            - instance of WebDriver
+	 */
 	public DraftPage(WebDriver webDriver) {
 		super(webDriver);
 	}
@@ -49,6 +61,11 @@ public class DraftPage extends BasePage {
 		return driver.findElements(By.xpath(String.format("//div[text() = '%s']", textBox))).isEmpty();
 	}
 
+	/**
+	 * This method checks that draft mail is saved and clicks to button "Send
+	 * mail"
+	 * 
+	 */
 	public void sendMail() {
 		sendBtn.click();
 		if (mailSentAllert.isDisplayed()) {
@@ -56,6 +73,10 @@ public class DraftPage extends BasePage {
 		}
 	}
 
+	/**
+	 * 
+	 * @return new instance of SentMail page
+	 */
 	public SentMailPage goToSentPage() {
 		sentMailPageLnk.click();
 		return new SentMailPage(getDriver());

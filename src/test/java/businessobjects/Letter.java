@@ -1,5 +1,13 @@
 package businessobjects;
 
+/**
+ * The class is used to create a new letter with properties <b>testAdress</b>,
+ * <b>testSubject</b>, <b>testBody</b>
+ * 
+ * @author Ivan_Bulgakov
+ */
+
+
 public class Letter {
 
 	private String testAdress;

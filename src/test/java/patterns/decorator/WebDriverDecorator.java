@@ -8,13 +8,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
+/**
+ * Implementation of pattern "Decorator" for Interface "WebDriver"
+ * 
+ * @author Ivan_Bulgakov
+ *
+ */
 public class WebDriverDecorator implements WebDriver {
 
 	private WebDriver driver;
 
 	public WebDriverDecorator(WebDriver driver) {
 		this.driver = driver;
-
 	}
 
 	public void get(String url) {
@@ -75,15 +80,17 @@ public class WebDriverDecorator implements WebDriver {
 		return driver;
 	}
 
-	public boolean isElementExist(By locator) {
-		try {
-			driver.findElement(locator);
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
-	}
-
+	/**
+	 * 
+	 * Is this element displayed or not? This method avoids the problem of
+	 * having to parse an element's "style" attribute. Returns:Whether or not
+	 * the element is displayed
+	 * 
+	 * @param locator
+	 *            - By expression
+	 * @return true if element presented or false if not
+	 * @throws InterruptedException
+	 */
 	public boolean isElementPresent(By locator) throws InterruptedException {
 
 		try {
@@ -94,6 +101,16 @@ public class WebDriverDecorator implements WebDriver {
 		}
 	}
 
+	/**
+	 * Is this element displayed or not? This method avoids the problem of
+	 * having to parse an element's "style" attribute. Returns:Whether or not
+	 * the element is displayed
+	 * 
+	 * @param element
+	 *            - WebElement
+	 * @return <b>true</b> if element presented or <b>false</b> if not
+	 * @throws InterruptedException
+	 */
 	public boolean isElementPresent(WebElement element) throws InterruptedException {
 
 		try {

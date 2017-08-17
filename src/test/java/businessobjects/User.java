@@ -4,6 +4,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * The class is used to create a new user with properties <b>login</b>,
+ * <b>password</b>
+ * 
+ * @author Ivan_Bulgakov
+ */
 public class User {
 
 	private static final String ERROR_MSG = "Error! File with properties does not exist!";
@@ -13,6 +19,14 @@ public class User {
 	private String login;
 	private String password;
 
+	/**
+	 * Constructor returns new User, reading data from property file
+	 * 
+	 * @param login
+	 *            - user's email adress
+	 * @param password
+	 *            - user's password
+	 */
 	public User() {
 		FileInputStream fis;
 		Properties property = new Properties();

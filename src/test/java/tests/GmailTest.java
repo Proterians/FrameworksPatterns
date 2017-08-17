@@ -24,6 +24,12 @@ import patterns.builder.InformalLetterBuilder;
 import patterns.decorator.WebDriverDecorator;
 import patterns.singletone.WebDriverSingletone;
 
+/**
+ * Class with tests
+ * 
+ * @author Ivan_Bulgakov
+ *
+ */
 public class GmailTest {
 
 	private static final String START_URL = "https://mail.google.com/";

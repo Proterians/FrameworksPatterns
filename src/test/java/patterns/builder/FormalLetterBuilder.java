@@ -1,7 +1,10 @@
 package patterns.builder;
 
 import java.util.Date;
-
+/**
+ * @author Ivan_Bulgakov
+ *
+ */
 public class FormalLetterBuilder extends LetterBuilder {
 
 	@Override

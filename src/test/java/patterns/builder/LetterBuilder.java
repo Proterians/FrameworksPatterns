@@ -1,7 +1,12 @@
 package patterns.builder;
 
 import businessobjects.Letter;
-
+/**
+ * 
+ * 
+ * @author Ivan_Bulgakov
+ *
+ */
 public abstract class LetterBuilder {
 
 	protected Letter letter = new Letter();
